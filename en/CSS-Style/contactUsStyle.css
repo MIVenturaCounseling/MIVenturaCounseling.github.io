@@ -350,7 +350,7 @@ input:checked + .slider:before {
 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 45px;
+    font-size: 3.5vw;
     color: black;
     margin-left: auto;
     margin-right: auto;
@@ -360,7 +360,7 @@ input:checked + .slider:before {
 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 35px;
+    font-size: 3vw;
     color: black;
     margin-left: auto;
     margin-right: auto;
