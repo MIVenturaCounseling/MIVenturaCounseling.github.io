@@ -360,11 +360,13 @@ input:checked + .slider:before {
 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 3vw;
+    font-size: 2.7vw;
     color: black;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-weight: 900;
+    font-stretch: 100%;
 }
 
 
