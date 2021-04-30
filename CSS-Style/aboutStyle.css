@@ -14,9 +14,10 @@ header
 	position: fixed;
 	top:0;
 	z-index: 200;
-    border-bottom-color: grey;
-    border-bottom-width: 0.5px;
-    border-bottom-style: solid;
+	background-color: cadetblue;
+    	border-bottom-color: grey;
+    	border-bottom-width: 0.5px;
+    	border-bottom-style: solid;
 }
 
 #logoImage
@@ -115,7 +116,7 @@ header a:hover:before
     width: 100%;
     height: auto;
     text-align: right;
-    background-color: cadetblue;
+    
     padding-top: 10px;
     margin-bottom: 0px;
    
@@ -126,7 +127,7 @@ header a:hover:before
 {
     width: 100%;
     text-align: right;
-    background-color: cadetblue;
+    
     margin-bottom: 0px;
 }
 #phoneContainer
