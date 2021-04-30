@@ -324,7 +324,7 @@ input:checked + .slider:before {
     opacity: .8;
     color:black;
     width: 25%;
-    height:110px;
+    
     position:fixed;
     z-index: 200;
     right:0%;
@@ -343,7 +343,7 @@ input:checked + .slider:before {
 #questionContainer
 {
     color:black;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 530;
     font-stretch: 100%;
     letter-spacing: 0px;
@@ -354,8 +354,9 @@ input:checked + .slider:before {
 #responseContainer
 {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 1vw;
     visibility: hidden;
+    margin-bottom:1vh;
 }
 #choiceOneContainer
 {
@@ -375,12 +376,12 @@ input:checked + .slider:before {
 }
 #crisisButtonOne
 {
-    padding:7px 30px;
+    padding:.5vw 2.6vw;
     background-color: black;
     text-decoration: none;
     border: 0px;
     color:white;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 530;
     font-stretch: 100%;
     letter-spacing: 0px;
@@ -388,12 +389,12 @@ input:checked + .slider:before {
 }
 #crisisButtonTwo
 {
-    padding:7px 30px;
+    padding:.5vw 2.6vw;
     background-color: black;
     text-decoration: none;
     border: 0px;
     color:white;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 530;
     font-stretch: 100%;
     letter-spacing: 0px;
