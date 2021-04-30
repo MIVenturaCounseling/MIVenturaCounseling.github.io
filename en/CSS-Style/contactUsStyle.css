@@ -14,9 +14,10 @@ header
 	position: fixed;
 	top:0;
 	z-index: 200;
-    border-bottom-color: grey;
-    border-bottom-width: 0.5px;
-    border-bottom-style: solid;
+    	border-bottom-color: grey;
+    	border-bottom-width: 0.5px;
+    	border-bottom-style: solid;
+	background-color: white;
 }
 
 #logoImage
@@ -115,17 +116,12 @@ header a:hover:before
     width: 100%;
     height: auto;
     text-align: right;
-    background-color: white;
-    padding-top: 10px;
-   
-    
-    
+    padding-top: 10px; 
 }
 #phonefull
 {
     width: 100%;
     text-align: right;
-    background-color: white;
 }
 #phoneContainer
 {
