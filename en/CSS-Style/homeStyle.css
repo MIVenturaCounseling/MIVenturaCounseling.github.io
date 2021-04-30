@@ -116,17 +116,12 @@ header a:hover:before
     width: 100%;
     height: auto;
     text-align: right;
-    background-color: cadetblue;
     padding-top: 10px;
-   
-    
-    
 }
 #phonefull
 {
     width: 100%;
     text-align: right;
-    background-color: cadetblue;
 }
 #phoneContainer
 {
