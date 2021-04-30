@@ -117,6 +117,7 @@ header a:hover:before
     text-align: right;
     background-color: cadetblue;
     padding-top: 10px;
+    margin-bottom: 0px;
    
     
     
@@ -126,6 +127,7 @@ header a:hover:before
     width: 100%;
     text-align: right;
     background-color: cadetblue;
+    margin-bottom: 0px;
 }
 #phoneContainer
 {
