@@ -363,6 +363,7 @@ input:checked + .slider:before {
     width: 100%;
     margin-top: 1vw;
     visibility: hidden;
+    margin-bottom: 1vh;
 }
 #choiceOneContainer
 {
