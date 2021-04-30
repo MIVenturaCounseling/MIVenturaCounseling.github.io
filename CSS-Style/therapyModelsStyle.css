@@ -462,7 +462,7 @@ input:checked + .slider:before {
     margin-right: auto;
     display: block;
     margin-top: 0px;
-    background-color: greenyellow;
+    background-color: cadetblue;
     overflow: auto;
     border:none;
     padding: 0px;
