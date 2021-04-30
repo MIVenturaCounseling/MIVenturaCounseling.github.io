@@ -1,0 +1,517 @@
+body
+{
+    background-color: cadetblue;
+	font-family:Arial;
+	padding:0px;
+	margin:0px;
+	width:100%;
+}
+header
+{
+	margin:0px;
+	height:100px;
+	width:100%;
+	position: fixed;
+	top:0;
+	z-index: 200;
+    border-bottom-color: grey;
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+}
+
+#logoImage
+{
+	height: 100px;
+	float:left;
+	margin-left: 30px;
+	margin-top: 10px;	
+}
+#nav_container
+{
+	font-size: 20px;
+	list-style-type: none;
+	background-color: white;
+	margin-top:0px;
+	margin-bottom: 0px;
+	text-align: right;
+	padding-right: 30px;
+	padding-top:10px;
+	padding-bottom: 15px;    
+}
+#headerList
+{
+    display: inline;
+	padding: 10px 15px;	
+}
+
+header a
+{
+    position:relative;
+    text-decoration:none;
+    color: black;
+	padding:0px;
+}
+header a:hover
+{
+	color:black;
+}
+header a:before
+{
+	content: "";
+  	position: absolute;
+  	width: 100%;
+  	height: 2px;
+  	bottom: 0;
+  	left: 0;
+	
+  	background-color: black;
+  	visibility: hidden;
+  	-webkit-transform: scaleX(0);
+ 	transform: scaleX(0);
+  	-webkit-transition: all 0.3s ease-in-out 0s;
+  	transition: all 0.3s ease-in-out 0s;
+}
+header a:hover:before
+{
+	visibility: visible;
+  	-webkit-transform: scaleX(1);
+  	transform: scaleX(1);
+}
+#title1
+{
+    color:black;
+    font-size: 27px;
+    font-weight: 900;
+    font-stretch: 100%;
+    letter-spacing: -2.7px;
+    font-size: 40px;
+    width:50%;
+    margin-top:188px;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+.textOne
+{
+    
+    font-size: 22px;
+    font-weight: 550;
+    font-stretch: 100%;
+    letter-spacing:-1px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+     
+}
+#selectedLang{
+    color:black;
+}
+#nonselectedLang{
+    color:grey;
+}
+#switchContainer
+{
+    width: 100%;
+    height: auto;
+    text-align: right;
+    background-color: white;
+    padding-top: 10px;
+   
+    
+    
+}
+#phonefull
+{
+    width: 100%;
+    text-align: right;
+    background-color: white;
+}
+#phoneContainer
+{
+   display: inline-block;
+    width:15%;
+    text-align: right;
+    margin-top: 5px;
+    
+}
+#imagePhone
+{
+    width: 10%;
+    float:left;
+}
+#num
+{
+    color: black;
+    font-size: 22px;
+    font-weight: 550;
+    font-stretch: 100%;
+    letter-spacing:-1px;
+    text-align: center;
+   
+    float:right;
+    width: 90%;
+}
+.switch
+{
+     
+    position:relative;
+    display: inline-block;
+    width: 50px;
+    height:24px;
+}
+.switch input{
+    opacity:0;
+    width:0;
+    height:0;
+}
+
+.slider{
+    position: absolute;
+    cursor:pointer;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: black;
+    -webkit-transition:.4s;
+    transition:.4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition:.4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background: black;
+}
+
+input:focus +.slider {
+    box-shadow: 0 0 1px black;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round:before{
+    border-radius: 50%;
+}
+#on1Page
+{
+    content: "";
+  	position: absolute;
+  	width: 100%;
+  	height: 2px;
+  	bottom: 0;
+  	left: 0;
+  	background-color: black;
+  	visibility: visible;
+}
+.titleFont
+{
+    font-weight: 900;
+    font-stretch: 100%;
+    letter-spacing: -2.7px;  
+}
+#questionsContainer
+{
+    color:black;
+    width:40%;
+    height:400px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top: 0px;
+    text-align: left;
+    padding-right: 50px;
+    font-size: 70px;    
+    position:absolute;
+    left:50%;
+    top:200px;
+}
+#questions
+{
+    font-size: 40px;   
+    margin-left: 10px;
+}
+#contactInfo
+{
+    background-color: #00004d;
+    color:white;
+    width: 35%;
+    height:500px;
+    position:absolute;
+    left:7%;
+    top:0%;
+    margin-left: 30px;
+    visibility: hidden;
+    padding-bottom: 20px;
+}
+#ownerTitle
+{
+    font-size: 25px;
+    margin-left:0px;
+    margin-top:300px;
+    margin-right:35px;
+    visibility: hidden;
+    text-align: right;
+    color: #d9d9d9;
+    
+}
+#contactName
+{
+    color:white;
+    font-size: 40px;
+    margin-left:20px;
+    margin-top:0px;
+    margin-right:35px;
+    text-align: right;
+    visibility: hidden;
+}
+#contactNumberEmail
+{
+    margin-top:0px;
+    margin-left:30px;
+    margin-right:35px;
+    margin-bottom:10px;
+    font-size: 20px;
+    font-weight: 300px;
+    font-stretch: 100%;
+    letter-spacing: 0px;
+    visibility: hidden;
+    text-align: right;
+}
+
+
+
+
+
+#wholeContainer
+{
+    width:100%;
+    text-align: center;
+    margin-top: 155px;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+#wholeContainer2
+{
+    width:100%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: auto;
+    background-color: white;
+}
+#locationContainer
+{
+    width:50%;
+    float:left;
+}
+#contactContainer
+{
+    width:50%;
+    float:right;
+    text-align: left;
+}
+#mapImage
+{
+    width:60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#containerAddress
+{
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color:black;
+    text-align: left;
+    
+    font-size: 20px;
+    font-weight: 600;
+}
+#contactConOne
+{
+    font-size: 40px;
+    color: white;
+}
+#contactConPhoneNum
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#contactConEmail
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+
+
+#wholeContainerSlide
+{
+    width:70%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cadetblue;
+}
+#slideshowContainer
+{
+    margin-top: 0px;
+    display:block;
+    width: 100%;
+    
+    background-color: cadetblue;
+    position: relative;
+    margin-bottom: 0px;
+}
+.slide23
+{
+    
+    width:100%;
+    display:none;
+    margin-left:auto;
+    margin-right:auto;
+    text-decoration: none;
+    border:0;
+    max-width: 100%;
+    display: block;
+}
+.slide
+{
+    height: 352px;
+    width: 100%
+    display:none;
+    margin-left:auto;
+    margin-right:auto;
+    text-decoration: none;
+    border:0;
+    max-width: 100%;
+}
+.buttonStyle1
+{
+    width:30px;
+    height:100px;
+    border:0;
+    background-color: white;
+    opacity:0.3;
+}
+.buttonStyle1:hover
+{
+    background-color: #d9d9d9;
+}
+#buttonSlideLeft
+{
+    position:absolute;
+    top:130px; 
+    left:0;
+}
+#arrow2
+{
+  	border: solid black;
+  	border-width: 0 4px 4px 0;
+  	display: inline-block;
+  	padding: 0px;
+	width: 10px;
+	height:10px;
+
+}
+.right
+{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-right:0px;
+    
+}
+.left
+{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-left:3px;
+}
+#buttonSlideRight
+{
+    position:absolute;
+    top:130px; 
+    right:0;
+    padding-right: 25px; 
+}
+#tempSlide
+{
+    height:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fontReg
+{
+    font-size: 50px;
+    font-weight: 750;
+    font-stretch: 100%;
+    letter-spacing: -1.7px;
+    color: black;
+    text-transform: uppercase;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#feeInfo
+{
+    text-align: left;
+    margin-left: auto;
+    margin-right:auto;
+    width:100%;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: black;
+    margin-top:8px;
+    margin-bottom:60px;
+    font-size: 22px;
+}
+#feeInfoContainer
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    width:80%;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: black;
+    margin-top:8px;
+    margin-bottom:0px;
+    font-size: 22px;
+}

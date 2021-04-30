@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "CSS-Style\contactUsStyle.css">
+</head>
+<body>
+<header>
+    
+	<a id = "logo" href = "index.html"> <img id = "logoImage" src="images\header\Logo.jpg" alt = "logo"></a>
+    <div id = "switchContainer">
+        
+        <label class = "textOne" id = "selectedLang" >Spanish</label>
+        <label class = "switch">
+        <input id = "switchOne" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "nonselectedLang">English</label>
+    </div>
+    <div id = "phonefull">
+    <div id = "phoneContainer">
+        <img id = "imagePhone" src="images\header\icon_phone.png" >
+        <div id = "num">214 - 755 - 7964</div>
+    </div>
+    </div>
+    
+	
+	<ul id = "nav_container">
+    	<li id = "headerList"><a href = "index.html" >Comienzo</a></li>
+    	<li id = "headerList"> <a href= "about.html">Sobre Mi</a></li>
+        <li id = "headerList"><a href = "services.html" >Servicios Disponibles</a></li>
+        <li id = "headerList"><a href = "therapyModels.html" >Terapia</a></li>
+    	<li id = "headerList"><a id = "onPage" href= "contactUs.html">Contactanos</a></li>
+	</ul>
+</header>
+
+<div id = "wholeContainer">
+    <div id = "locationContainer">
+    <div id = "wholeContainerSlide" >
+        <div id = "slideshowContainer">
+        <img id = "slide1" class = "slide" src="images\contact\image_slide_1.png">
+        <img id = "slide2" class = "slide" src="images\contact\image_slide_2.jpg">
+        <img id = "slide3" class = "slide" src="images\contact\image_slide_3.jpg">
+        <img id = "slide3" class = "slide" src="images\contact\image_slide_4.jpg">
+        <img id = "slide3" class = "slide" src="images\contact\image_slide_5.jpg">
+        <img id = "slide3" class = "slide" src="images\contact\image_slide_6.jpg">
+        <img id = "slide3" class = "slide" src="images\contact\image_slide_7.jpg">
+        <button id = "buttonSlideLeft" class= "buttonStyle1" onclick="switchSlide(-1)">
+            <div id = "arrow2" class = "left"></div>
+        </button>
+        <button id = "buttonSlideRight" class= "buttonStyle1" onclick="switchSlide(1)"> 
+            <div id = "arrow2" class = "right"></div>
+        </button>
+        </div>   
+    </div>
+    
+    <div id = "containerAddress">
+        <div class = "fontFourBoldUnder">Miventura Counseling</div>
+        <a class = "fontFourBoldUnder" href = "https://www.google.com/maps/place/MiVentura+Counseling/@32.8239479,-96.8663457,17z/data=!3m1!4b1!4m5!3m4!1s0x864e9d693bf30279:0xd21636242c98de51!8m2!3d32.8237707!4d-96.8643696">8204 Elmbrook Dr. Suite 172<br>Dallas, TX 75247</a>
+       
+       
+    </div>
+    </div>
+    <div id = "contactContainer">
+        <div id = "contactConOne" class = "titleFont">Para preguntas o para una consulta gratis de 15 minutos puedes contactarme al:</div>
+        <div id = "contactConPhoneNum" class = "titleFont">214 - 755 - 7964</div>
+        <div id = "contactConOne" class = "titleFont">o por correo electronico: </div>
+        <div id = "contactConEmail" class = "titleFont">MIVenturacounseling@gmail.com</div>
+    </div>
+</div>
+<div id = "wholeContainer2">
+    <div class = "fontReg">Tarifa</div>
+    <div id = "feeInfoContainer">
+        <div id = "feeInfo">
+            $100 para una sesión de terapia individual de 50 minutos<br><br>
+            $150 costo por sesión de terapia para parejas/matrimonios<br><br>
+            Pago:<br><br>
+            En efectivo, y se aceptan la mayoría de tarjetas de crédito/debito
+            <br><br>
+            El costo para asistir a un grupo de apoyo varía según la cantidad de sesiones por programa  y el tipo de grupo. Comuníquese con la oficina para obtener más información sobre la lista de grupos disponibles y tarifas.
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="JS-Script/contactUsScript.js"></script>
+</html>
