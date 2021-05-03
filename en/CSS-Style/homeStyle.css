@@ -484,7 +484,7 @@ input:checked + .slider:before {
 }
 .fontReg
 {
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 750;
     font-stretch: 100%;
     letter-spacing: -1.7px;
@@ -493,7 +493,7 @@ input:checked + .slider:before {
 }
 .fontReg2
 {
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 750;
     font-stretch: 100%;
     letter-spacing: -1.7px;
