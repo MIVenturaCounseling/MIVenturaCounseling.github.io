@@ -386,7 +386,7 @@ input:checked + .slider:before {
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 35px;
+    font-size: 2.2vw;
 }
 #infoPText
 {
@@ -446,7 +446,7 @@ input:checked + .slider:before {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    font-size: 22px;
+    font-size: 1.5vw;
 }
 #wholeContainer2
 {
