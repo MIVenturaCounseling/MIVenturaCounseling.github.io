@@ -408,6 +408,19 @@ input:checked + .slider:before {
 }
 @media only screen and (max-device-width:900px)
 {
+	#aboutContainer
+	{
+    		background-color:white ;
+    		margin-left: auto;
+    		margin-right: auto;
+    		width:95%;
+    		height:auto;
+		display: block;
+    		overflow: auto;
+    		margin-top:110px;
+    
+    
+	}
 	#picTitleContainer
 	{
     		width:100%;
