@@ -444,9 +444,9 @@ input:checked + .slider:before {
 	#paraAbout
 	{
     		margin-top: 5px;
-    		margin-left: 0px;
+    		margin-left: auto;
     		margin-bottom:30px;
-    		margin-right: 0px;
+    		margin-right: auto;
     
     		color:black;
     		font-size: 1.5vw;
@@ -457,6 +457,7 @@ input:checked + .slider:before {
 	#titleparaAbout
 	{
  		margin-top: 30px;
-    		margin-left: 0px;
+    		margin-left: auto;
+		margin-right: auto;
 	}
 }
