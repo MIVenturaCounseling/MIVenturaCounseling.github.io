@@ -344,7 +344,7 @@ input:checked + .slider:before {
 }
 #contactConOne
 {
-    font-size: 40px;
+    font-size: 3vw;
     color: white;
 }
 #contactConPhoneNum
