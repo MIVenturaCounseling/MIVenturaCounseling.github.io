@@ -408,3 +408,71 @@ input:checked + .slider:before {
 
     
 }
+@media only screen and (max-device-width:900px)
+{
+	#aboutContainer
+	{
+    		background-color:white ;
+    		margin-left: auto;
+    		margin-right: auto;
+    		width:85%;
+    		height:auto;
+		display: block;
+    		overflow: auto;
+    		margin-top:110px;
+    
+    
+	}
+	#picTitleContainer
+	{
+    		width:100%;
+    		text-align: center;
+    		
+	}
+	#profilePic
+	{
+   		width: 250px;
+    		margin-top: 30px;
+		margin-left:auto;
+		margin-right:auto;
+    
+	}
+	#titlOfPic
+	{
+    		color:black;
+    		margin-top: 8px;
+    		font-size: 25px;
+    		font-weight: 550;
+    		font-stretch: 100%;
+    		letter-spacing: 0px;
+    		margin-bottom: 0px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#aboutInfo
+	{
+    		width: 100%;
+		margin-left: auto;
+    		margin-right: auto;
+	}
+	#paraAbout
+	{
+    		margin-top: 5px;
+    		margin-left: auto;
+    		margin-bottom:30px;
+    		margin-right: auto;
+    
+    		color:black;
+    		font-size: 1.5vw;
+    		font-weight: 500;
+    		font-stretch: 100%;
+    		letter-spacing: 0px;
+	}
+	#titleparaAbout
+	{
+ 		margin-top: 30px;
+    		margin-left: auto;
+		margin-right: auto;
+	}
+	
+}
