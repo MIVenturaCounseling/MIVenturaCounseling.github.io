@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "CSS-Style\eventsStyle.css">
+</head>
+<body>
+<header>
+    
+	<a id = "logo" href = "index.html"> <img id = "logoImage" src="images\header\Logo.JPG" alt = "logo"></a>
+    <div id = "switchContainer">
+        
+        <label class = "textOne" id = "selectedLang" >Spanish</label>
+        <label class = "switch">
+        <input id = "switchOne" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "nonselectedLang">English</label>
+    </div>
+    <div id = "phonefull">
+    <div id = "phoneContainer">
+        <img id = "imagePhone" src="images\header\icon_phone.png" >
+        <div id = "num">214 - 755 - 7964</div>
+    </div>
+    </div>
+    
+	
+	<ul id = "nav_container">
+    	<li id = "headerList"><a href = "index.html" >Comienzo</a></li>
+    	<li id = "headerList"> <a href= "about.html">Sobre Mi</a></li>
+        <li id = "headerList"><a href = "services.html" >Servicios</a></li>
+        <li id = "headerList"><a href = "therapyModels.html" >Terapia</a></li>
+    	<li id = "headerList"><a id = "onPage" href= "contactUs.html">Contactanos</a></li>
+	</ul>
+</header>
+
+<div id = "wholeContainer">
+    <div id = "top_title" class = "titleFont">Próximos Eventos - Talleres</div>
+    <img id = "image_flyer" src="images\events\event_one_spanish.jpg" >
+</div>
+
+
+</body>
+
+<script type="text/javascript" src="JS-Script/eventsScript.js"></script>
+</html>
