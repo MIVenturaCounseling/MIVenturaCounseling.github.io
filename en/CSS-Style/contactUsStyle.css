@@ -513,3 +513,29 @@ input:checked + .slider:before {
     margin-bottom:0px;
     font-size: 22px;
 }
+
+
+#required_form_title
+{
+    width:100%;
+    text-align: center;
+}
+#required_form_title_two
+{
+    width:100%;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#required_form_paragraph
+{
+    width:100%;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+#bottom_space
+{
+    width:100%;
+    height: 50px;
+}
