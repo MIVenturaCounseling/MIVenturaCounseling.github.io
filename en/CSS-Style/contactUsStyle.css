@@ -519,7 +519,8 @@ input:checked + .slider:before {
 {
     width:100%;
     text-align: center;
-    font-weight: 900;
+    font-weight: 1200;
+    font-size: 32px;
 }
 #required_form_title_two
 {
@@ -527,7 +528,7 @@ input:checked + .slider:before {
     text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-weight: 900;
+    font-weight: 1000;
 }
 #required_form_paragraph
 {
