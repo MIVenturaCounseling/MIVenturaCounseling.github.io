@@ -236,16 +236,28 @@ input:checked + .slider:before {
     margin-left: auto;
     margin-right: auto;
 }
-#image_flyer
+#image_flyer_one
 {
     width:60%;
     margin-bottom: 80px;
 }
+#image_flyer_two
+{
+    width:60%;
+    margin-bottom: 80px;
+    display: none;
+}
 @media only screen and (max-device-width:900px)
 {
-    #image_flyer
+    #image_flyer_one
     {
         width:100%;
+    }
+    #image_flyer_two
+    {
+        width:100%;
+        margin-bottom: 80px;
+        display: none;
     }
 }
 
