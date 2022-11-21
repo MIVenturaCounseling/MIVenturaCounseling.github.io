@@ -245,7 +245,7 @@ input:checked + .slider:before {
 {
     width:60%;
     margin-bottom: 80px;
-    display: none;
+    
 }
 @media only screen and (max-device-width:900px)
 {
@@ -256,8 +256,6 @@ input:checked + .slider:before {
     #image_flyer_two
     {
         width:100%;
-        margin-bottom: 80px;
-        display: none;
     }
 }
 
