@@ -5,10 +5,18 @@
 </head>
 <body>
 <header>
-    
-    <a id = "logo" href = "home.html"> <img id = "logoImage" src="images\header\Logo.JPG" alt = "logo"></a>
+    <div id = "mobile_switchContainer">
+        <label class = "textOne" id = "nonselectedLang" >Spanish</label>
+        <label class = "switch">
+            <input id = "mobile_switchOne" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "selectedLang">English</label>
+    </div>
+    <a id = "logo" href = "home.html"> 
+        <img id = "logoImage" src="images\header\Logo.JPG" alt = "logo">
+    </a>
     <div id = "switchContainer">
-        
         <label class = "textOne" id = "nonselectedLang" >Spanish</label>
         <label class = "switch">
         <input id = "switchOne" type="checkbox" onclick = "switchLanguage()">
@@ -22,8 +30,6 @@
         <div id = "num">214 - 755 - 7964</div>
     </div>
     </div>
-    
-	
 	<ul id = "nav_container">
     	<li id = "headerList"><a href = "home.html" >Home</a></li>
     	<li id = "headerList"> <a href= "about.html">About</a></li>
@@ -32,118 +38,116 @@
     	<li id = "headerList"><a id = "onPage" href= "contactUs.html">Contacts</a></li>
 	</ul>
 </header>
-    <div class = "wholeContainer">
-        <div  class = "fontReg2">The following therapy services<br>are offered</div>
-        <div class = "wholeContainer45">
-            <div class = "halfBlock" id ="halfBlockOne">
-                <img id = "halfBlockpic"  src = "images\services\image_inperson.jpg">
-                <div id = "halfBlockTitle">In-Person</div>
-                <div id = "halfBlockInfo" >It is when the person has the availability to attend their therapy sessions by meeting with the counselor in the office.</div>
-                <div id = "halfBlockTitle">Hybrid</div>
-                <div id = "halfBlockInfo" >It is  a combination of both in-person and Telehealth therapy.</div>
+    <div id = "top_bar"></div>
+    <div id = "title_one">The Following Therapy Services
+        Are Offered</div>
+    <div id = "big_blocks_container">
+        <div id = "big_block_one"  class = "big_block_center">
+            <div id = "left_one" class = "left_side_block">
+                    <div class = "big_block_title">In-Person</div>
+                    <div class = "big_block_description">It is when the person has the availability to attend their therapy sessions by meeting with the counselor in the office.</div>
             </div>
-            <div class = "halfBlock" id ="halfBlockTwo">
-                <img id = "halfBlockpic"  src = "images\services\image_telehealth.jpg">
-                <div id = "halfBlockTitle">Telehealth</div>
-                <div id = "halfBlockInfo" >It is the use of a telephone and the use of telecommunication technologies to extend mental health care, when you and your counselor are not in the same place at the same time. If you have a phone or a device such as a computer / laptop with an internet connection and a safe and private place, you already have everything you need to obtain services through telehealth.
-                </div>
-            </div> 
+            <img id = "right_one" class = "right_side_block"  src="images\services\tele_icon_a_blank.png" >
+            <img id = "right_one_absolute" class = "pic_bottom_corner"  src="images\services\person_icon_c.png" >
         </div>
-    
-        
-     </div>
-    <div class = "wholeContainer2">
-        <div id = "titleOneTwo">Counseling Services</div>
-    <div id = "typeContainerAmount" class = "amountPeopleContainer">
-        
-        <div id = "fLeft" class = "amountPeopleBlock" >
-            <div class = "titleTwoB">Individual</div>
-            <img class = "blockAmountPic"  src = "images\services\icon_individual.png">
+        <div id = "big_block_two"  class = "big_block_center">
+            <div id = "left_two" class = "left_side_block">
+                    <div class = "big_block_title">Telehealth</div>
+                    <div class = "big_block_description">It is the use of a telephone and the use of telecommunication technologies to extend mental health care, when you and your counselor are not in the same place at the same time. If you have a phone or a device such as a computer / laptop with an internet connection and a safe and private place, you already have everything you need to obtain services through telehealth. </div>
+            </div>
+            <img class = "right_side_block"  src="images\services\tele_icon_a_blank.png" >
+            <img class = "pic_bottom_corner"  src="images\services\tele_icon_b.png" >
         </div>
-        <div id = "fRight" class = "amountPeopleBlock" >
-            <div class = "titleTwoB">Group</div>
-            <img class = "blockAmountPic" src = "images\services\icon_group.png">
+        
+        <div id = "big_block_three"  class = "big_block_center">
+            <div id = "left_three" class = "left_side_block">
+                    <div class = "big_block_title">Hybrid</div>
+                    <div class = "big_block_description">It is  a combination of both in-person and Telehealth therapy.</div>
+            </div>
+            <img class = "right_side_block"  src="images\services\combine_icon_c_blank.png" >
+            <img class = "pic_bottom_corner"  src="images\services\combine_icon_d.png" >
+            
+        </div>
+    </div>
+
+    <div id = "mobile_big_blocks_container">
+        <div  class = "mobile_big_block_center">
+            <div  class = "mobile_left_side_block">
+                    <div class = "mobile_big_block_title">In-Person</div>
+                    <div class = "mobile_big_block_description">It is when the person has the availability to attend their therapy sessions by meeting with the counselor in the office.</div>
+            </div>
+            <img  class = "mobile_right_side_block"  src="images\services\mobile_person_icon_c_blank.png" >
+            <img  class = "mobile_pic_bottom_corner"  src="images\services\mobile_person_icon_c.png" >
+        </div>
+        <div class = "mobile_big_block_center">
+            <div  class = "mobile_left_side_block">
+                    <div class = "mobile_big_block_title">Telehealth</div>
+                    <div class = "mobile_big_block_description">It is the use of a telephone and the use of telecommunication technologies to extend mental health care, when you and your counselor are not in the same place at the same time. If you have a phone or a device such as a computer / laptop with an internet connection and a safe and private place, you already have everything you need to obtain services through telehealth. </div>
+            </div>
+            <img class = "mobile_right_side_block"  src="images\services\mobile_tele_icon_b_blank.png" >
+            <img class = "mobile_pic_bottom_corner"  src="images\services\mobile_tele_icon_b.png" >
+        </div>
+        
+        <div  class = "mobile_big_block_center">
+            <div class = "mobile_left_side_block">
+                    <div class = "mobile_big_block_title">Hybrid</div>
+                    <div class = "mobile_big_block_description">It is  a combination of both in-person and Telehealth therapy.</div>
+            </div>
+            <img class = "mobile_right_side_block"  src="images\services\mobile_combine_icon_d_blank.png" >
+            <img class = "mobile_pic_bottom_corner"  src="images\services\mobile_combine_icon_d.png" >
+            
         </div>
     </div>
     
     
-    <div class = "fontReg">For</div>
-    
-     <div id = "typeContainerTypePeople" class = "amountPeopleContainer">
-        <div id = "fLeft" class = "typePeopleBlock" >
-            <div class = "titleTwo">Children</div>
-        </div>
-        
-        <div id = "fRight" class = "typePeopleBlock" >
-            <div class = "titleTwo">Adults</div>
-        </div>   
-        
-        <div id = "fRight" class = "typePeopleBlock" >
-            <div class = "titleTwo">Couples</div>
-        </div>
-        
-        <div id = "fRight" class = "typePeopleBlock" >
-            <div class = "titleTwo">Adolescents</div>
-        </div>           
-    </div>   
-        
-        
-        
-    <div id = "typeContainerTypePeople" class = "amountPeopleContainer">
-        <div id = "fLeft" class = "typePeopleBlock" >
-            <img class = "blockTypePic"  src = "images\services\image_kids.jpg">
-           
-        </div>
-        <div id = "fRight" class = "typePeopleBlock" >
-            <img class = "blockTypePic" src = "images\services\image_adults.jpg">
-        </div>
-        <div id = "fRight" class = "typePeopleBlock" >
-            <img class = "blockTypePic" src = "images\services\image_couples.jpg">
-        </div>
-        <div id = "fRight" class = "typePeopleBlock" >
-            <img class = "blockTypePic" src = "images\services\image_adolescent.jpg">
-        </div>
+    <div id = "bubble_container">
+        <img id = "bubble_image"  src = "images\services\bubble_words_list_two.png">
     </div>
-    
-    
-    
-    
+
+    <div id = "mobile_bubble_container">
+        <img id = "mobile_bubble_image"  src = "images\services\mobile_bubble_words.png">
+        <ul id = "mobile_bubble_list">
+          <li class = "mobile_bubble_list_item">Children</li>  
+          <li class = "mobile_bubble_list_item">Adolescents</li>
+          <li class = "mobile_bubble_list_item">Adults</li>
+          <li class = "mobile_bubble_list_item">Couples</li>
+        </ul>
     </div>
     
     
     
     
     <div class = "wholeContainer3" >
-    <div id = "daBorder">
-    <div id = "titleOneTwo" class = "therapyTitle">Counseling Services for</div>
-    <div id = "typeContainerTypeTherapy" class = "con1">
-        <ul id = "blockList">
-            <li class = "textTwo">Relationship Problems</li>
-            <li class = "textTwo">Anxiety</li>
-            <li class = "textTwo">Depression and Mood</li>
-            <li class = "textTwo">Obsessive-compulsive disorder (OCD)</li>
-            <li class = "textTwo">Parenting Struggles</li>
-            
-        </ul>
+            <div id = "daBorder">
+                    <div id = "titleOneTwo" class = "therapyTitle">Counseling Services for</div>
+                    <div id = "typeContainerTypeTherapy_one" >
+                            <ul id = "blockList">
+                                <li class = "textTwo">Relationship Problems</li>
+                                <li class = "textTwo">Anxiety</li>
+                                <li class = "textTwo">Obsessive-compulsive disorder (OCD)</li>
+                                <li class = "textTwo">Depression and Mood</li>
+                                <li class = "textTwo">Parenting Struggles</li>
+                                <li class = "textTwo">Grief and Loss</li>
+                                <li class = "textTwo">Trauma and Posttraumatic Stress disorder-PTSD</li>
+                            
+                            </ul>
+                    </div>
+                    <div id = "typeContainerTypeTherapy_two" >
+                            <ul id = "blockList">
+                                <li class = "textTwo">Incest recovery</li>
+                                <li class = "textTwo">Intimate Partner Violence</li>
+                                <li class = "textTwo">Domestic Violence</li>
+                                <li class = "textTwo">Behavior Issues</li>
+                                <li class = "textTwo">Anger</li>
+                                <li class = "textTwo">Family Violence</li>
+                            </ul>
+                    </div>
+                   
+            </div>
     </div>
-    <div id = "typeContainerTypeTherapy" class = "con3">
-        <ul id = "blockList">
-            <li class = "textTwo">Incest recovery</li>
-            <li class = "textTwo">Intimate Partner Violence</li>
-            <li class = "textTwo">Domestic Violence</li>
-            <li class = "textTwo">Behavior Issues</li>
-        </ul>
-    </div>
-    <div id = "typeContainerTypeTherapy" class = "con2">
-        <ul id = "blockList">
-            <li class = "textTwo">Grief and Loss</li>
-            <li class = "textTwo">Anger</li>
-            <li class = "textTwo">Trauma and Posttraumatic Stress disorder-PTSD</li>
-            <li class = "textTwo">Family Violence</li>
-        </ul>
-    </div>
-    </div>
-    </div>
+    
+        
+        
 </body>
     
 <script type="text/javascript" src="JS-Script/servicesScript.js"></script>
