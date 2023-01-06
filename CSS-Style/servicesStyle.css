@@ -271,7 +271,7 @@ input:checked + .slider:before
     box-sizing: border-box;
     float: none; 
 }
-#blockList
+.blockList
 {
     text-align: center;
     color:black;
@@ -511,9 +511,10 @@ input:checked + .slider:before
     }
     .textTwo
     {
-        font-size:45px;
+        font-size:55px;
         margin-bottom: 35px;
     }
+    
     #titleOneTwo
     {
         font-size: 75px;
