@@ -4,103 +4,256 @@
 <link rel = "stylesheet" href = "CSS-Style\contactUsStyle.css">
 </head>
 <body>
+<div id = "dark_back">
+</div>
 <header>
-    
-	<a id = "logo" href = "home.html"> <img id = "logoImage" src="images\header\Logo.JPG" alt = "logo"></a>
-    <div id = "switchContainer">
-        
+    <div id = "mobile_switchContainer">
         <label class = "textOne" id = "nonselectedLang" >Spanish</label>
         <label class = "switch">
-        <input id = "switchOne" type="checkbox" onclick = "switchLanguage()">
+            <input id = "mobile_switchOne" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "selectedLang">English</label>
+    </div>
+	<a id = "logo" href = "home.html"> <img id = "logoImage" src="images\header\Logo.JPG" alt = ""></a>
+    <div id = "switchContainer">
+        <label class = "textOne" id = "nonselectedLang" >Spanish</label>
+        <label class = "switch">
+        <input id = "switchOne" type="checkbox" onclick = "switchLanguage()" aria-label = "">
             <span class="slider round"></span>
         </label>
         <label class = "textOne" id = "selectedLang">English</label>
     </div>
     <div id = "phonefull">
     <div id = "phoneContainer">
-        <img id = "imagePhone" src="images\header\icon_phone.png" >
+        <img id = "imagePhone" src="images\header\icon_phone.png" alt = "" >
         <div id = "num">214 - 755 - 7964</div>
     </div>
     </div>
     
 	
 	<ul id = "nav_container">
-    	<li id = "headerList"><a href = "home.html" >Home</a></li>
-    	<li id = "headerList"> <a href= "about.html">About</a></li>
-        <li id = "headerList"><a href = "services.html" >Services</a></li>
-        <li id = "headerList"><a href = "therapyModels.html" >Therapy</a></li>
-    	<li id = "headerList"><a id = "onPage" href= "contactUs.html">Contact</a></li>
+    	<li class = "headerList" id = "header_one"><a href = "home.html" >Home</a></li>
+    	<li class = "headerList" id = "header_two"> <a href= "about.html">About</a></li>
+        <li class = "headerList" id = "header_three"><a href = "services.html" >Services</a></li>
+        <li class = "headerList" id = "header_four"><a href = "therapyModels.html" >Therapy</a></li>
+    	<li class = "headerList" id = "header_five"><a id = "onPage" href= "contactUs.html">Contact</a></li>
 	</ul>
 </header>
-
-<div id = "wholeContainer">
-    <div id = "locationContainer">
-    <div id = "wholeContainerSlide" >
-        <div id = "slideshowContainer">
-        <img id = "slide1" class = "slide" src="images\contact\image_slide_1.png">
-        <img id = "slide2" class = "slide" src="images\contact\image_slide_1.png">
-        <img id = "slide3" class = "slide" src="images\contact\image_slide_1.png">
-        <img id = "slide3" class = "slide" src="images\contact\image_slide_1.png">
-        <img id = "slide3" class = "slide" src="images\contact\image_slide_1.png">
-        <img id = "slide3" class = "slide" src="images\contact\image_slide_1.png">
-        <img id = "slide3" class = "slide" src="images\contact\image_slide_1.png">
-        <button id = "buttonSlideLeft" class= "buttonStyle1" onclick="switchSlide(-1)">
-            <div id = "arrow2" class = "left"></div>
-        </button>
-        <button id = "buttonSlideRight" class= "buttonStyle1" onclick="switchSlide(1)"> 
-            <div id = "arrow2" class = "right"></div>
-        </button>
-        </div>   
+<div id = "top_bar"></div>
+<div id = "top_container">
+    <div id = "contact_center">
+        
+        <div id = "left_side">
+            <div id = "top_title">Contact Us</div>
+            <div id = "top_description">For questions or for a free 15 minute consultation</div>
+        </div>
+    </div>
+    <div id  = "right_side">
+        <img id = "top_image" src = "images\contact\new_one_low_res.jpg">
     </div>
     
-    <div id = "containerAddress">
-        <div class = "fontFourBoldUnder">Miventura Counseling</div>
-        <a class = "fontFourBoldUnder" href = "https://www.google.com/maps/place/MiVentura+Counseling/@32.8239479,-96.8663457,17z/data=!3m1!4b1!4m5!3m4!1s0x864e9d693bf30279:0xd21636242c98de51!8m2!3d32.8237707!4d-96.8643696">8204 Elmbrook Dr. Suite 132<br>Dallas, TX 75247</a>
+    <div id = "top_boxes_container">
+        <div id = "left_box">
+            <div id = "phone">
+                <img class = "contact_logo" src="images\contact\phone_four_logo.png" alt = "">
+                <div id = "logo_text_bottom_call">Call Us/Send us a text<br><br>214-755-7964</div>
+                
+                <a id = "call_text_button" href = "tel:+1-214-755-7964" >
+                    <button id = "call_square_button">
+                        Call/Text
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div id = "right_box">
+            <div id = "email_contact_button">
+                <img class = "contact_logo" src="images\contact\email_four_logo.png" alt = "">
+                <div id = "logo_text_bottom_email">Email us at<br><br>
+                   
+                        miventuracounseling@gmail.com
+                    
+                </div>
+                
+                    <button id = "email_square_button" onclick="pop_up_form()">
+                        Email
+                    </button>
+                    
+            </div>
+        </div>
+    </div>
+    
+   
+ 
+
+    <div id = "outer_form_container">
+                <button id = "close_form" onclick="pop_up_close()">X</button>
+                <div id = "top_form_outer_Container">
+                    <div id = "top_form_container">
+                    <div id = "notice">Please be aware that when you submit the form it will redirect you to send the email through the email account that is logged into this device/computer. Please consider communicating sensitive information through telephone or in-person. </div>
+                    <label id = "top_name_title" class = "email_label">Name</label><br>
+                    <div id = "name_container">
+                            <label id = "mobile_label_first_name">First Name</label>
+                            <input type = "text" id = "input_email_first_name" class = "email_input" aria-label = "">
+                            <label id = "mobile_label_first_name">Last Name</label>
+                            <input type = "text" id = "input_email_last_name" class = "email_input" aria-label = "">
+                    </div>
+                    <div id = "name_container">
+                        <label  id = "email_first_name" > First Name</label>
+                        <label  id = "email_last_name" >Last Name</label>
+                    </div>
+                    <br><br>
+                    <label class = "email_label">Email</label><br>
+                    <input type = "text" id = "email" class = "email_input" aria-label = "">
+                    <br><br>
+                    <label class = "email_label">Message</label><br>
+                    <textarea type = "text" id = "email_message" class = "email_input"  rows="5" aria-label = ""></textarea>
+                    <br>
+                    <input type = "text" id = "error" readonly aria-label = "">
+                    <br>
+                    <button id = "submit_button" onclick="submit_email()" aria-label = "">Send</button>
+                    
+                    
+                    
+                    </div>
+                
+                
+                </div>
+    </div>
+
+
+</div>
+<div id  = "mobile_office_image_container">
+    <img id = "mobile_office_image" src = "images\contact\new_one.jpg">
+</div>
+<div id = "location_container">
+    
+    
+    
+    <div id = "right_location_container">
+        <div id = "info_container">
+            <img id = "real_life_place_image" src = "images\contact\my_elm_pic_two.jpg">
+            
+                <div id = "addy_info">
+                        <div id = "addy_title_info">
+                            MIVentura Counseling
+                        </div>
+                        
+                        8204 Elmbrook Dr. Suite 132<br>
+                        Dallas, TX 75247<br><br>
+
+                        <a id = "addy_link" href = "https://www.google.com/maps/place/MiVentura+Counseling/@32.8239479,-96.8663457,17z/data=!3m1!4b1!4m5!3m4!1s0x864e9d693bf30279:0xd21636242c98de51!8m2!3d32.8237707!4d-96.8643696">
+                            <div id = "gps_button">
+                                GPS
+                            </div> 
+                            
+                        </a>
+                        
+            
+                </div>
+            
+        </div>
+    </div>
+    <div id = "left_location_container">
+        <img id = "mapped_image" src = "images\contact\map_new.png"> 
+    </div>
+
+</div>
+<div id  = "mobile_location_container">
+    <div id = "mobile_addy_info_container">
+        <img id = "mobile_real_life_place_image" src = "images\contact\my_elm_pic_two.jpg">
+            
+        <div id = "mobile_addy_info">
+                        <div id = "mobile_addy_title_info">
+                            MIVentura Counseling
+                        </div>
+                        
+                        8204 Elmbrook Dr. Suite 132<br>
+                        Dallas, TX 75247<br><br>
+
+                        <a id = "mobile_addy_link" href = "https://www.google.com/maps/place/MiVentura+Counseling/@32.8239479,-96.8663457,17z/data=!3m1!4b1!4m5!3m4!1s0x864e9d693bf30279:0xd21636242c98de51!8m2!3d32.8237707!4d-96.8643696">
+                            <div id = "mobile_gps_button">
+                                GPS
+                            </div> 
+                            
+                        </a>
+                        
+            
+        </div>
         
     </div>
+    <a href = "https://www.google.com/maps/place/MiVentura+Counseling/@32.8239479,-96.8663457,17z/data=!3m1!4b1!4m5!3m4!1s0x864e9d693bf30279:0xd21636242c98de51!8m2!3d32.8237707!4d-96.8643696">
+        <img id = "mobile_mapped_image" src = "images\contact\map_new.png">
+    </a>
+</div>
+<div id = "prices_container">
+    <div id = "prices_left_block">
+        <div class = "price_block_title" id = "price_title_individual">
+            Individual
+        </div>
+        <div class = "price_block_cost" id = "price_block_individual_cost">
+            Initial Session: $150<br>Following Sessions: $130
+
+        </div>
+        <img class = "prices_image" src = "images\contact\in_two.png">
+        <div class = "price_block_description" id = "price_block_individual_description">
+            One individual session of 50 minutes 
+        </div>
+        
+        
     </div>
-    <div id = "contactContainer">
-        <div id = "contactConOne" class = "titleFont">For questions or for a free 15 minute consultation, call me at :</div>
-        <div id = "contactConPhoneNum" class = "titleFont">214 - 755 - 7964</div>
-        <div id = "contactConOne" class = "titleFont">or email me at : </div>
-        <div id = "contactConEmail" >MIVenturacounseling@gmail.com</div>
+    <div id = "prices_inbetween_space_one"></div>
+    <div id = "prices_middle_block">
+        <div class = "price_block_title" id = "price_title_couple">
+            Couple
+        </div>
+        <div class = "price_block_cost" id = "price_block_couple_cost">
+            $175
+        </div>
+        <img class = "prices_image" src = "images\contact\co_two.png">
+        <div class = "price_block_description" id = "price_block_couple_description">
+            One therapy session for couples
+        </div>
+    </div>
+    <div id = "prices_inbetween_space_two"></div>
+    <div id = "prices_right_block">
+        <div class = "price_block_title" id = "price_title_group">
+            Group
+        </div>
+        <div class = "price_block_cost" id = "price_block_group_cost">
+            The cost for attending a support group varies based on the number of the weeks and the type of group.
+        </div>
+        <img class = "prices_image" src = "images\contact\couple_one.png">
+        <div class = "price_block_description" id = "price_block_group_description">
+            Please contact the office for more information on the list of groups available and fees.
+        </div>
     </div>
 </div>
-<div id = "wholeContainer2">
-    <div class = "fontReg">Fees</div>
-    <div id = "feeInfoContainer">
-        <div id = "feeInfo">
-            
-            Individuals: Initial session is $150 and the following sessions are $130 (50 minutes)<br><br>
-            Marriage/couples: $175 for each counseling session<br><br>
-            Payment:<br><br>
-            Cash and all major credit cards are accepted as payment
-            <br><br>
-            The cost for attending a support group varies based on the number of the weeks and the type of group. Please contact the office for more information on the list of groups available and fees.
-        </div>
-	    <div id = "required_form_title">Good Faith Estimate Notice</div>
-        <div id = "required_form_title_two">Notice to clients and prospective clients:</div>
-        <div id = "required_form_paragraph">
-            Under the law, health care providers need to give clients who don’t have insurance or who are not using insurance an estimate of the expected charges for medical services, including Counseling/therapy services.  
-        </div>
-        <div id = "required_form_paragraph">
-            You have the right to receive a Good Faith Estimate for the total expected cost of any non-emergency healthcare services, including Counseling/therapy services. 
-        </div>
-        <div id = "required_form_paragraph">
-           You can ask your healthcare provider, and any other provider you choose, for a Good Faith Estimate before you schedule a service, or at any time during treatment.
-        </div>
-        <div id = "required_form_paragraph">
-            If you receive a bill that is at least $400 more than your Good Faith Estimate, you can dispute the bill. Make sure to save a copy or picture of your Good Faith Estimate.  
+<div id = "payment_type_container">
+    <div id = "payment_type_title">Payment</div>
+    <div id = "payment_type_description">Cash and all major credit cards are accepted as payment</div>
+</div>
+<div id = "faith_notice_container">
+    <div id = "faith_notice_title">
+        Good Faith Estimate Notice
+    </div>
+    <div id = "faith_notice_paragraph">
+        <b>Notice to clients and prospective clients:</b><br><br>
+        Under the law, health care providers need to give clients who don’t have insurance or who are not using insurance an estimate of the expected charges for medical services, including Counseling/therapy services.
+        <br><br>
+        You have the right to receive a Good Faith Estimate for the total expected cost of any non-emergency healthcare services, including Counseling/therapy services.
+        <br><br>
+        You can ask your healthcare provider, and any other provider you choose, for a Good Faith Estimate before you schedule a service, or at any time during treatment.
+        <br><br>
+        If you receive a bill that is at least $400 more than your Good Faith Estimate, you can dispute the bill. Make sure to save a copy or picture of your Good Faith Estimate.
+        <br><br>
+        For questions or more information about your right to a Good Faith Estimate, or how to dispute a bill, see your Estimate, or visit <a href = "https://www.cms.gov/nosurprises">www.cms.gov/nosurprises</a>.
 
-        </div>
-        <div id = "required_form_paragraph">
-             For questions or more information about your right to a Good Faith Estimate, or how to dispute a bill, see your Estimate, or visit <a href = "https://www.cms.gov/nosurprises">www.cms.gov/nosurprises</a>.
-        </div>
-        <div id = "bottom_space"></div>
 
     </div>
 </div>
-
+<img id = "high_res_office_image" src = "images\contact\new_one.jpg" onload="replace_image_one()">
+<div id = "bottom_space"></div>
 </body>
 
 <script type="text/javascript" src="JS-Script/contactUsScript.js"></script>
