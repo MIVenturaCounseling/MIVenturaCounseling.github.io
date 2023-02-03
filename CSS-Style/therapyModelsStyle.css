@@ -14,12 +14,16 @@ header
 	position: fixed;
 	top:0;
 	z-index: 200;
-    	border-bottom-color: grey;
-    	border-bottom-width: 0.5px;
-    	border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
 	background-color: white;
 }
-
+#top_bar
+{
+    height:160px;
+    width:100%;
+}
 #logoImage
 {
 	height: 100px;
@@ -37,7 +41,7 @@ header
 	text-align: right;
 	padding-right: 30px;
 	padding-top:10px;
-	padding-bottom: 15px;    
+	padding-bottom: 15px;   
 }
 #headerList
 {
@@ -64,7 +68,6 @@ header a:before
   	height: 2px;
   	bottom: 0;
   	left: 0;
-	
   	background-color: black;
   	visibility: hidden;
   	-webkit-transform: scaleX(0);
@@ -78,20 +81,6 @@ header a:hover:before
   	-webkit-transform: scaleX(1);
   	transform: scaleX(1);
 }
-#title1
-{
-    color:black;
-    font-size: 27px;
-    font-weight: 900;
-    font-stretch: 100%;
-    letter-spacing: -2.7px;
-    font-size: 40px;
-    width:50%;
-    margin-top:188px;
-    margin-left:auto;
-    margin-right: auto;
-    text-align: center;
-}
 .textOne
 {
     
@@ -101,9 +90,7 @@ header a:hover:before
     letter-spacing:-1px;
     text-align: center;
     margin-right: 10px;
-    margin-left: 10px;
-    
-     
+    margin-left: 10px;   
 }
 #selectedLang{
     color:black;
@@ -117,9 +104,10 @@ header a:hover:before
     height: auto;
     text-align: right;
     padding-top: 10px;
-   
-    
-    
+}
+#mobile_switchContainer
+{
+      display: none;      
 }
 #phonefull
 {
@@ -128,43 +116,43 @@ header a:hover:before
 }
 #phoneContainer
 {
-   display: inline-block;
-    width:15%;
+    display: inline-block;
+    width:225px;
     text-align: right;
     margin-top: 5px;
+    margin-right: 20px;
     
 }
 #imagePhone
 {
-    width: 10%;
+    width: 25px;
     float:left;
 }
 #num
 {
     color: black;
-    font-size: 1.7vw;
+    font-size: 25px;
     font-weight: 550;
     font-stretch: 100%;
-    letter-spacing:-1px;
+    letter-spacing:0px;
     text-align: center;
-   
     float:right;
-    width: 90%;
+    margin-top: 5px;
+    
 }
 .switch
 {
-     
     position:relative;
     display: inline-block;
     width: 50px;
     height:24px;
 }
-.switch input{
+.switch input
+{
     opacity:0;
     width:0;
     height:0;
 }
-
 .slider{
     position: absolute;
     cursor:pointer;
@@ -187,28 +175,28 @@ header a:hover:before
     -webkit-transition:.4s;
     transition: .4s;
 }
-
-input:checked + .slider {
-    background: #2196F3;
+input:checked + .slider 
+{
+    background: black;
 }
-
-input:focus +.slider {
-    box-shadow: 0 0 1px #2196F3;
+input:focus +.slider 
+{
+    box-shadow: 0 0 1px black;
 }
-input:checked + .slider:before {
+input:checked + .slider:before 
+{
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
-
-.slider.round{
+.slider.round
+{
     border-radius: 34px;
 }
-.slider.round:before{
+.slider.round:before
+{
     border-radius: 50%;
 }
-
-
 #on1Page
 {
     content: "";
@@ -278,6 +266,20 @@ input:checked + .slider:before {
     
     
 }
+#text4
+{
+ 
+    margin-top: 20px;
+    
+    
+}
+#text5
+{
+    
+    margin-top: 20px;
+    
+    
+}
 #firstBlock
 {
   float:left;
@@ -334,7 +336,7 @@ input:checked + .slider:before {
     margin-right: auto;
     overflow: auto;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 .fontReg2
 {
@@ -360,7 +362,10 @@ input:checked + .slider:before {
     margin-right: auto;
     margin-bottom: 30px;
     display: block;
-    background-color: white;
+    background-color: #c4f4d4;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 25px;
     
 }
 #infoTitle
@@ -371,11 +376,11 @@ input:checked + .slider:before {
     color: black;
     text-transform: uppercase;
     width:90%;
-    margin-top:50px;
+    margin-top:20px;
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 2.2vw;
+    font-size: 30px;
 }
 #infoPText
 {
@@ -385,11 +390,11 @@ input:checked + .slider:before {
 
     width:100%;
     margin-top:8px;
-    margin-bottom: 70px;
+    margin-bottom: 130px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 .under
 {
@@ -435,7 +440,7 @@ input:checked + .slider:before {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 #wholeContainer2
 {
@@ -445,9 +450,10 @@ input:checked + .slider:before {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 0px;
-    background-color: white;
-    overflow: auto;
+    margin-top: 140px;
+    background-color: cadetblue;
+ 
+    box-sizing: border-box;
     border:none;
     padding: 0px;
 
@@ -469,4 +475,348 @@ input:checked + .slider:before {
 button
 {
     text-decoration: none;
+}
+#small_boxes_container_one
+{
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+
+  
+    box-sizing: border-box;
+    text-align: center;
+    
+
+}
+#small_boxes_container_two
+{
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+
+  
+    box-sizing: border-box;
+    text-align: center;
+    
+
+}
+.small_box
+{
+    width:31%;
+    height:auto;
+    background-color: rgb(156, 206, 208);
+    margin-top: 60px;
+    
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    
+}
+.small_boxes_divider
+{
+    width:3.5%;
+    height: 200px;
+    background-color:cadetblue;
+    margin-top: 60px;
+    float:left;
+}
+
+#small_box_one
+{
+    float: left;
+    background-color: #c4f4d4;
+}
+#small_box_two
+{
+    float:left;
+}
+#small_box_three
+{
+    float:right;
+}
+#small_box_four
+{
+    float: left;
+}
+#small_box_five
+{
+    float:left;
+}
+#small_box_six
+{
+    float:right;
+}
+
+.small_box_title
+{
+    font-size: 25px;
+    font-weight: 700;
+    box-sizing: border-box;
+    height: 70px;
+}
+.small_box_image
+{
+    width:90%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#bottom_space
+{
+    width:100%;
+    height: 60px;
+}
+#last_box_container
+{
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: cadetblue;
+    overflow: hidden;
+    
+
+}
+#last_box
+{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width:31%;
+    height:auto;
+    background-color:rgb(156, 206, 208);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+   
+
+}
+#box_one_image_selected
+{
+    display:block;
+}
+#box_one_image_nonselected
+{
+    display: none;
+}
+#box_four_image_selected
+{
+    display:none;
+}
+#box_four_image_nonselected
+{
+    display: block;
+}
+#mobile_bottom_space
+{
+    width:100%;
+    height: 0px;
+}
+@media only screen and (max-device-width:900px) 
+{
+    #mobile_bottom_space
+    {
+        width:100%;
+        height: 600px;
+    }
+    #small_boxes_container_one
+    {
+        width:90%;
+    
+    }
+    #small_boxes_container_two
+    {
+        width:90%;
+    
+    }
+    #last_box_container
+    {
+        width:90%;
+    
+    }
+    .small_box_title
+    {
+        font-size: 32px;
+        height: 90px;
+    }
+    .infoContainer
+    {
+        width: 90%;
+    }
+    #infoTitle
+    {
+        font-size: 40px;
+    }
+    #infoPText
+    {
+        font-size: 35px;
+    }
+    .infoList
+    {
+        font-size: 35px;
+    }
+    #phoneContainer
+    {
+        margin-top: 20px;
+        width: auto;
+    }
+    #imagePhone
+    {
+        width: 35px;
+        float:left;
+        margin-right: 20px;
+    }
+    #num
+    {
+        color: black;
+        font-size: 45px;
+        font-weight: 550;
+        font-stretch: 100%;
+        letter-spacing:-1px;
+        text-align: center;
+        float:right;
+        margin-top: 5px;
+        
+    }
+    #switchContainer
+    {
+        display: none;
+    }
+    #selectedLang{
+        color:black;
+        
+    }
+    #nonselectedLang{
+        color:grey;
+    }
+    #mobile_switchContainer
+    {
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: right;
+        padding-top: 0px;
+        text-align: right;
+        margin-top: 15px;
+       
+        
+    }
+    .switch
+    {
+        position:relative;
+        display: inline-block;
+        width: 150px;
+        height:55px;
+        padding: 0px;
+        margin: 0px;
+       
+        vertical-align: top;
+    }
+    .switch input
+    {
+        opacity:0;
+        width:0;
+        height:0;
+    }
+    .slider{
+        position: absolute;
+        cursor:pointer;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color: black;
+        -webkit-transition:.4s;
+        transition:.4s;
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 40px;
+        width: 40px;
+        left: 15px;
+        bottom: 8px;
+        background-color: white;
+        -webkit-transition:.4s;
+        transition: .4s;
+    }
+    input:checked + .slider 
+    {
+        background: black;
+    }
+    input:focus +.slider 
+    {
+        box-shadow: 0 0 1px black;
+    }
+    input:checked + .slider:before 
+    {
+        -webkit-transform: translateX(93px);
+        -ms-transform: translateX(93px);
+        transform: translateX(93px);
+    }
+    .slider.round
+    {
+        border-radius: 34px;
+    }
+    .slider.round:before
+    {
+        border-radius: 50%;
+    }
+    .textOne
+    {
+        font-size: 45px;
+        font-weight: 550;
+        font-stretch: 100%;
+        letter-spacing:0px;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px; 
+        box-sizing: border-box;
+        padding-top: 20px;  
+    }
+    #logo
+    {
+        position:absolute;
+        top:5px;
+        left:0px;
+    }
+    #logoImage
+    {
+        height: 130px;
+        float:left;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;	
+    }
+    #nav_container
+    {
+        font-size: 30px;
+        list-style-type: none;
+        background-color: white;
+        margin-top:0px;
+        margin-bottom: 0px;
+        text-align: right;
+        padding-right: 30px;
+        padding-top:30px;
+        padding-bottom: 15px;    
+    }
+    #top_bar
+    {
+        height:280px;
+        width:100%;
+    }
+    #wholeContainer2
+    {
+        margin-top: 270px;
+    }
+
 }
