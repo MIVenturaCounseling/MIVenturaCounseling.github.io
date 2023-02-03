@@ -5,7 +5,14 @@
 </head>
 <body>
 <header>
-    
+    <div id = "mobile_switchContainer">
+        <label class = "textOne" id = "nonselectedLang" >Spanish</label>
+        <label class = "switch">
+            <input id = "mobile_switchOne" type="checkbox" onclick = "switchLanguage()">
+            <span class="slider round"></span>
+        </label>
+        <label class = "textOne" id = "selectedLang">English</label>
+    </div>
 	<a id = "logo" href = "home.html"> <img id = "logoImage" src="images\header\Logo.JPG" alt = "logo"></a>
     <div id = "switchContainer">
         
@@ -32,39 +39,58 @@
     	<li id = "headerList"><a id = "onPage" href= "contactUs.html">Contact</a></li>
 	</ul>
 </header>
+
+
+
+
 <div id = "wholeContainer">
    <div class = "fontReg">Therapy Models</div>
 
    
-        <div id = "wholeContainer3">
-        <div id = "firstBlock" class = "modelBlock" onclick = "firstBlock()">
-            <div id = "text1" class = "fontReg2" >EMDR</div>
+   <div id = "small_boxes_container_one">
+        <div class = "small_box" id = "small_box_one" onclick="firstBlock()"> 
+            <div class = "small_box_title">EMDR</div>
+            <img class = "small_box_image" src="images\therapy_models\eye.png" alt = "">
+            
         </div>
+        <div class = "small_boxes_divider" id = "row_one_small_divider_one"></div>
+        <div class = "small_box" id = "small_box_two" onclick="seventhBlock()">
+            <div class = "small_box_title">GOTTMAN<br>
+                METHOD</div>
+                <img class = "small_box_image" src="images\therapy_models\heart.png" alt = "">
+                
+        </div>
+        <div class = "small_boxes_divider" id = "row_one_small_divider_two"></div>
+        <div class = "small_box" id = "small_box_three" onclick="sixthBlock()">
+            <div class = "small_box_title">EXPRESSIVE<br>ARTS</div>
+            <img class = "small_box_image" src="images\therapy_models\art.png" alt = "">
+        </div>
+    </div>
+    <div id = "small_boxes_container_two">
+        <div class = "small_box" id = "small_box_four" onclick="fifthBlock()">
+            <div class = "small_box_title">SANDTRAY</div>
+            <img class = "small_box_image"  src="images\therapy_models\sand.png" alt = "">
         
-        <div id = "secondBlock" class = "modelBlock" onclick = "secondBlock()">
-            <div class = "fontReg2" id = "text2" >CBT</div>
         </div>
-        
-        <div id = "thirdBlock" class = "modelBlock" onclick = "thirdBlock()">
-            <div class = "fontReg2" id = "text3" >TF-CBT</div>
+        <div class = "small_boxes_divider" id = "row_two_small_divider_one"></div>
+        <div class = "small_box" id = "small_box_five" onclick="fourthBlock()">
+            <div class = "small_box_title">CCPT</div>
+            <img class = "small_box_image" src="images\therapy_models\play.png" alt = "">
         </div>
-        
-        <div id = "fourthBlock" class = "modelBlock" onclick = "fourthBlock()">
-            <div class = "fontReg2" id = "text4" >CCPT</div>
+        <div class = "small_boxes_divider" id = "row_two_small_divider_two"></div>
+        <div class = "small_box" id = "small_box_six" onclick="thirdBlock()">
+            <div class = "small_box_title">TF-CBT</div>
+            <img class = "small_box_image" src="images\therapy_models\magnify.png" alt = "">
         </div>
-        
-        <div id = "fifthBlock" class = "modelBlock" onclick = "fifthBlock()">
-            <div class = "fontReg2" id = "text5" >Sandtray</div>
+    </div>
+    <div id = "last_box_container">
+        <div id = "last_box" onclick="secondBlock()">
+            <div class = "small_box_title" >CBT</div>
+            <img class = "small_box_image" src="images\therapy_models\cbt.png" alt = "">
         </div>
-        
-        <div id = "sixthBlock" class = "modelBlock" onclick = "sixthBlock()">
-            <div class = "fontReg2" id = "text6" >Expressive<br>Arts</div>
-        </div>
-        <div id = "seventhBlock" class = "modelBlock" onclick = "seventhBlock()">
-            <div class = "fontReg2" id = "text7" >Gottman<br>Method</div>
-        </div>
-        </div>
-        
+    </div>
+    <div id = "top_of_info"></div>
+            
         
     
     
@@ -73,6 +99,7 @@
             
         <div id = "firstInfo" class = "infoContainer">
         <div id = "infoTitle">EMDR<br>Therapy-Eye Movement Desensitization Reprocessing</div>
+        <br>
         <div id = "infoPText">EMDR therapy is an extensively researched, effective, and integrative psychotherapy method proven to help people recover from trauma and other distressing life experiences, and to enhance emotional resources.
             <br><br>
             How does EMDR work?
@@ -101,6 +128,7 @@
         
         <div id = "secondInfo" class = "infoContainer">
         <div id = "infoTitle">Cognitive Behavioral Therapy (CBT)</div>
+        <br>
         <div id = "infoPText">
             CBT is an intensive short-term and problem-oriented approach, which is a form of psychological treatment that focuses on challenging and changing distorted thoughts, dysfunctional emotions, and behaviors; the way people think influences the way they feel and these feelings impact people’s behavior. People naturally develop their own techniques and create their own solutions to adapt to their environment by using their conscious level and the metacognitive level to naturally grow, to learn better ways of coping, and become more effective in their lives. CBT focuses on finding the solutions at the present, instead of staying stuck, processing the root cause of where the problems are initiated. 
             <br>
@@ -122,6 +150,7 @@
         
         <div id = "thirdInfo" class = "infoContainer">
         <div id = "infoTitle">Cognitive Behavioral Therapy<br>focused on the Trauma (TF-CBT)</div>
+        <br>
         <div id = "infoPText">
             TF-CBT is a therapeutic intervention designed to help children, adolescents, and their parents overcome the impact of traumatic events. The focus of treatment is to assist the child or adolescent to develop coping strategies for traumatic stress reactions.  
             <br><br>
@@ -138,6 +167,7 @@
         
         <div id = "fourthInfo" class = "infoContainer">
         <div id = "infoTitle">Child-Centered Play Therapy</div>
+        <br>
         <div id = "infoPText">
             CCPT is a play-based approach for children ages 3 to 10 who are experiencing social, emotional, behavioral, and relational problems. CCPT utilizes play which is the first natural language of children and children use it to express thoughts and feelings the same way adults use words to communicate. Play therapy is a powerful tool that helps children face their cognitive, emotional, and behavioral challenges by processing their inner experiences and feelings through play and symbols.
             <br><br>
@@ -161,6 +191,7 @@
         
         <div id = "fifthInfo" class = "infoContainer">
         <div id = "infoTitle">Sandtray Therapy</div>
+        <br>
         <div id = "infoPText">
             Sandtray Therapy is sometimes called Sandplay therapy; Therapists utilize Sandtrays to assess and treat a variety of mental disorders. 
             <br><br>
@@ -174,6 +205,7 @@
         
         <div id = "sixthInfo" class = "infoContainer">
         <div id = "infoTitle">Expressive Arts Therapy</div>
+        <br>
         <div id = "infoPText">
             This approach may integrate different types of arts like drama, writing, dancing, movement, painting, and/or music. People using expressive arts therapy are encouraged by the therapist to explore their experience's response, reactions, and insights of the thought process through pictures, sounds, explorations, and encounters with expressive art processes. Note: there is not a requirement for a person to have artistic skills to use or benefit from expressive arts therapy.
             <br><br>
@@ -185,6 +217,7 @@
             
         <div id = "seventhInfo" class = "infoContainer">
         <div id = "infoTitle">The Gottman Method Therapy</div>
+        <br>
         <div id = "infoPText">
            This method has research-based evidence that focused on what helps relationships succeed or fail. The Couple will be provided with the tools and skills to work together to best address their problems and learn how to solve them. They will be helped to identify and appreciate their strengths in their relationship while working productively through the process with methods that help them gently address their vulnerabilities in their relationship.
             </div>
@@ -198,6 +231,10 @@
     
     
 </div>
+
+
+<div id = "mobile_bottom_space"></div>
+
 </body>
 
 <script type="text/javascript" src="JS-Script/therapyModelsScript.js"></script>
