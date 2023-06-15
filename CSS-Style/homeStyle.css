@@ -610,6 +610,51 @@ input:checked + .slider:before {
     margin-bottom: 10px;
     font-size:1.3vw;
 }
+#resources_container
+{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: cadetblue;
+    padding-bottom: 100px;
+}
+#resources_title
+{
+    width:100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+#resources_paragraph
+{
+    font-size: 30px;
+}
+#iocdf_link_container
+{
+    width:100%;
+    text-align: center;
+}
+#iocdf_link
+{
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+#iocdf_image
+{
+    width:300px;
+    display: block;
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+   
+}
 @media only screen and (max-device-width:900px)
 {
     #link_to_events
