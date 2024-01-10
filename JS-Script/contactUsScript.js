@@ -348,7 +348,7 @@ function checkScreen()
                             //prices middle block (couple)
                             document.getElementById("prices_middle_block").style.width = "30%";
                             document.getElementById("price_title_couple").style.fontSize = "30px";
-                            document.getElementById("price_block_couple_cost").style.fontSize = "30px";
+                            document.getElementById("price_block_couple_cost").style.fontSize = "23px";
                             document.getElementById("price_block_couple_cost").style.height = "135px";
                             document.getElementById("price_block_couple_description").style.fontSize = "25px";
                             document.getElementById("price_block_couple_description").style.height = "160px";
