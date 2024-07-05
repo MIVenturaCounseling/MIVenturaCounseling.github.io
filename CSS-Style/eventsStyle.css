@@ -247,6 +247,12 @@ input:checked + .slider:before {
     margin-bottom: 80px;
     
 }
+#image_flyer_three
+{
+    width:60%;
+    margin-bottom: 80px;
+    
+}
 @media only screen and (max-device-width:900px)
 {
     #image_flyer_one
@@ -254,6 +260,10 @@ input:checked + .slider:before {
         width:100%;
     }
     #image_flyer_two
+    {
+        width:100%;
+    }
+    #image_flyer_three
     {
         width:100%;
     }
