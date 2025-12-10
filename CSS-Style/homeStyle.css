@@ -496,7 +496,8 @@ input:checked + .slider:before {
     line-height: 60px;
     margin: 10px 0 20px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 0 #000, margin: 10px 0 24px;
+    text-shadow: 2px 2px 0 #000;
+     margin: 10px 0 24px;
     text-align: center;
 }
 .fontReg
@@ -549,6 +550,54 @@ input:checked + .slider:before {
     margin-right: auto;
     text-align:right; 
 }
+
+/********************************************************************/
+/********************************************************************/
+/*Start of Social Media Icon List Styling*/
+#socials_container
+{
+    /*This width is to align with the outehr container of contact info above which is 80% as well*/
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+    background-color: #2196F3;
+}
+#social_icon_list_container
+{
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 10%;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.social_icon__list_item
+{
+    display: block;
+    flex: 0 1 auto; 
+    list-style-type: none;
+}
+.social_icon_image
+{
+   display: block;
+   /*
+   Here it will make the icon image bigger but its limited by the width of #icon_container
+   Be aware that the icons will be smaller if you add to the list without making changes to css so
+   when adding another icon probably see what it looks like first then mess with css
+   */
+   width:70%; 
+   float:right;
+   
+}
+
+/* End of Social Media Icon list Styling */
+/********************************************************************/
+/********************************************************************/
+
+
 #cite
 {
     width: 90%;
