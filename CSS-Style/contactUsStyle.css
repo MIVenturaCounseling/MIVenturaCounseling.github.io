@@ -913,8 +913,33 @@ input:checked + .slider:before {
     width:100%;
     text-align: left;
     font-size: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     margin-top: 30px;
+}
+#info_access_notice_title
+{
+    width:85%;
+    font-weight: 900;
+    font-size: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    text-align: left;
+    margin-bottom: 30px;
+    border-width: 0px;
+    border-top-width: 2px;
+    border-style: solid;
+    padding-top: 90px;
+}
+#info_access_notice_paragraph
+{
+    width:85%;
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    margin-left:auto;
+    margin-right:auto;
 }
 #bottom_space
 {
