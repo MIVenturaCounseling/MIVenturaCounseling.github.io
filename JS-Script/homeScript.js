@@ -23,7 +23,7 @@ function slideAway() {
 function scrollToHelp() {
     "use strict";
     slideAway();
-    $('html, body').animate({scrollTop: $("#crisis").offset().top - 135}, 2000);
+    $('html, body').animate({scrollTop: $("#crisis").offset().top - 200}, 2000);
 }
 //switch language to english by redirecting to other page with english text
 function switchLanguage() {
