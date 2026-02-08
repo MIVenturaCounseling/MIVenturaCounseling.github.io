@@ -30,5 +30,5 @@ function scrollToHelp() {
 function switchLanguage() {
     "use strict";
     swch.checked = false;
-    window.location.href = "../index.html";
+    window.location.href = "../";
 }

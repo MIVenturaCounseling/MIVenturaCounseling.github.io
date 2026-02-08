@@ -19,9 +19,42 @@ header
     border-bottom-style: solid;
 	background-color: white;
 }
+h1
+{
+    width: 95%;
+    text-align: center;
+    font-size:4rem;
+    font-weight: 900;
+    color:white;
+    letter-spacing:.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;  
+    text-decoration: none;
+}
+h2
+{
+    font-size: inherit;       
+    font-weight: inherit;   
+    margin: 0;            
+    padding: 0;            
+    color: inherit;        
+    display: inherit;       
+}
+h3
+{
+    font-size: inherit;       
+    font-weight: inherit;   
+    margin: 0;            
+    padding: 0;            
+    color: inherit;        
+    display: inherit;       
+}
 #top_bar
 {
-    height:160px;
+    height:9rem;
     width:100%;
 }
 #logoImage
@@ -197,19 +230,8 @@ input:checked + .slider:before
 {
     border-radius: 50%;
 }
-#titleOneTwo
-{
-    color:white;
-    font-size: 50px;
-    font-weight: 750;
-    font-stretch: 100%;
-    letter-spacing: -1.7px;
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-    margin-top: 50px;
-}
+
+
 .wholeContainer3
 {
     width:100%;
@@ -217,14 +239,7 @@ input:checked + .slider:before
     overflow:auto;
     margin-top: 0px;
 }
-.therapyTitle
-{
-    margin-top: 0px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
-}
+
 #typeContainerTypeTherapy_one
 {
     text-align: center;
@@ -288,16 +303,7 @@ input:checked + .slider:before
     padding-right: 10px;
     box-sizing: border-box;
 }
-#title_one
-{
-    width: 90%;
-    text-align: center;
-    font-size:45px;
-    font-weight: 700;
-    color:white;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .big_block_title
 {
     font-weight: 800;
@@ -465,8 +471,52 @@ input:checked + .slider:before
     width:60%;
     background-color: #c4f4d4;
 }
+.header_two_font_style
+{
+    width: 95%;
+    text-align: center;
+    font-size:3rem;
+    font-weight: 700;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+}
+#level_three_title
+{
+    font-stretch: 100%;
+    letter-spacing: -1.7px;
+    margin-bottom: 25px;
+   
+}
+#bubble_title
+{
+    
+}
 @media only screen and (max-device-width:900px) 
 {
+    #bubble_title
+    {
+        padding-top: 3rem;
+    }
+    .header_two_font_style
+    {
+        width: 95%;
+        text-align: center;
+        font-size:3rem;
+        font-weight: 700;
+        color:white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+    }
+    #level_three_title
+    {
+        
+        padding-top: 40px;
+        padding-bottom: 20px;
+        
+    }
     #big_blocks_container
     {
         display: none;
@@ -490,7 +540,7 @@ input:checked + .slider:before
     #mobile_bubble_container
     {
         display: block;
-        padding-top: 60px;
+        padding-top: 20px;
     }
     .mobile_bubble_list_item
     {
@@ -515,17 +565,8 @@ input:checked + .slider:before
         font-size:45px;
         margin-bottom: 35px;
     }
-    #titleOneTwo
-    {
-        font-size: 75px;
-        padding-top: 40px;
-        padding-bottom: 20px;
-        
-    }
-    #title_one
-    {
-        font-size: 70px;
-    }
+    
+   
     #phoneContainer
     {
         margin-top: 20px;

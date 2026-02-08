@@ -92,7 +92,7 @@ function switchLanguage() {
     "use strict";
     swch.checked = false;
     mobile_swch = false;
-    window.location.href = "en/therapyModels.html";
+    window.location.href = "en/therapy";
 }
 
 

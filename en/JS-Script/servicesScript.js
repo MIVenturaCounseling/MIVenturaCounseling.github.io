@@ -9,7 +9,7 @@ function switchLanguage()
     "use strict";
     swch.checked = false;
     mobile_swch.checked = false;
-    window.location.href = "../services.html";
+    window.location.href = "../servicios";
 }
 
 var browser_width = window.innerWidth;

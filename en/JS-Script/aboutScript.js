@@ -4,5 +4,5 @@ swch.checked = true;
 function switchLanguage() {
     "use strict";
     swch.checked = false;
-    window.location.href = "../about.html";
+    window.location.href = "../sobre-mi";
 }

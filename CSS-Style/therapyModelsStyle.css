@@ -19,6 +19,24 @@ header
     border-bottom-style: solid;
 	background-color: white;
 }
+h2
+{
+    font-size: inherit;       
+    font-weight: inherit;   
+    margin: 0;            
+    padding: 0;            
+    color: inherit;        
+    display: inherit;       
+}
+h3
+{
+    font-size: inherit;       
+    font-weight: inherit;   
+    margin: 0;            
+    padding: 0;            
+    color: inherit;        
+    display: inherit;       
+}
 #top_bar
 {
     height:160px;
@@ -623,6 +641,10 @@ button
 }
 @media only screen and (max-device-width:900px) 
 {
+    #wholeContainer
+    {
+        margin-top: 250px;
+    }
     #mobile_bottom_space
     {
         width:100%;
@@ -631,6 +653,7 @@ button
     #small_boxes_container_one
     {
         width:90%;
+        
     
     }
     #small_boxes_container_two

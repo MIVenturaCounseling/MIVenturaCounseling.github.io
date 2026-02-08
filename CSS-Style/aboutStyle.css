@@ -6,6 +6,10 @@ body
 	margin:0px;
 	width:100%;
 }
+title
+{
+    overflow-wrap: normal;
+}
 header
 {
 	margin:0px;
@@ -19,7 +23,28 @@ header
     	border-bottom-width: 0.5px;
     	border-bottom-style: solid;
 }
-
+h1
+{
+    font-size: inherit;       
+    font-weight: inherit;   
+    margin: 0;            
+    padding: 0;            
+    color: inherit;        
+    display: inherit;       
+}
+h2
+{
+    font-size: inherit;       
+    font-weight: inherit;   
+    margin: 0;            
+    padding: 0;            
+    color: inherit;        
+    display: inherit;       
+}
+#trained_on
+{
+    margin-bottom: .6rem;      
+}
 #logoImage
 {
 	height: 116px;
@@ -95,7 +120,7 @@ header a:hover:before
 .textOne
 {
     
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: 550;
     font-stretch: 100%;
     letter-spacing:-1px;
@@ -243,7 +268,7 @@ input:checked + .slider:before {
     height:auto;
     display: block;
     overflow: auto;
-    margin-top:110px;
+    margin-top:130px;
     
     
 }
@@ -293,7 +318,7 @@ input:checked + .slider:before {
 #titleparaAbout
 {
  margin-top: 30px;
-    margin-left: 30px;
+margin-left: 30px;
 }
 #aboutInfo
 {
@@ -302,13 +327,26 @@ input:checked + .slider:before {
 }
 #paraAbout
 {
+    margin-top: .6rem;
+    margin-left: 30px;
+    margin-bottom:30px;
+    margin-right: 30px;
+    
+    color:black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-stretch: 100%;
+    letter-spacing: 0px;
+}
+#paragraph_training
+{
     margin-top: 5px;
     margin-left: 30px;
     margin-bottom:30px;
     margin-right: 30px;
     
     color:black;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-weight: 500;
     font-stretch: 100%;
     letter-spacing: 0px;
@@ -393,9 +431,9 @@ input:checked + .slider:before {
     background-color: white;
     margin-top: 0px;
 }
-#temp
+#temp_one
 {
-    background-color: white;
+    
    
 }
 #nccLink
@@ -406,7 +444,7 @@ input:checked + .slider:before {
 
     
 }
-@media only screen and (max-device-width:900px)
+@media only screen and (max-width:900px)
 {
 	#aboutContainer
 	{
@@ -461,11 +499,23 @@ input:checked + .slider:before {
     		margin-right: auto;
     
     		color:black;
-    		font-size: 1.5vw;
+    		font-size: 1.5rem;
     		font-weight: 500;
     		font-stretch: 100%;
     		letter-spacing: 0px;
 	}
+    #paragraph_training
+    {
+        margin-top: 5px;
+    	margin-left: auto;
+    	margin-bottom:30px;
+    	margin-right: auto;
+    	color:black;
+    	font-size: 1.5rem;
+    	font-weight: 500;
+    	font-stretch: 100%;
+    	letter-spacing: 0px;
+    }
 	#titleparaAbout
 	{
  		margin-top: 30px;

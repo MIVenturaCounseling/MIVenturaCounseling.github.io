@@ -4,5 +4,5 @@ swch.checked = true;
 function switchLanguage() {
     "use strict";
     swch.checked = false;
-    window.location.href = "../events.html";
+    window.location.href = "../eventos";
 }

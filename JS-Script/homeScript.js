@@ -29,5 +29,5 @@ function scrollToHelp() {
 function switchLanguage() {
     "use strict";
     swch.checked = false;
-    window.location.href = "en/home.html";
+    window.location.href = "en/";
 }

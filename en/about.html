@@ -2,11 +2,18 @@
 <html lang ="en" >
 <head>
 <link rel = "stylesheet" href = "CSS-Style\aboutStyle.css">
+<link rel="alternate" hreflang="en" href="https://miventuracounseling.com/en/about" />
+<link rel="alternate" hreflang="es" href="https://miventuracounseling.com/sobre-mi" />
+<link rel="alternate" hreflang="x-default" href="https://miventuracounseling.com/en/about" />
+<link rel="canonical" href="https://miventuracounseling.com/en/about"/>
+<title>About Me - Maria Isela Ventura | LPC | Bilingual Therapist</title> 
+<meta charset="UTF-8">
+<meta name="description" content="Meet Maria Isela Ventura, Bilingual Therapist in Dallas TX providing a warm, compassionate, and supportive environment for individuals/families. Learn More!">
 </head>
 <body>
 <header>
     
-	<a id = "logo" href = "home.html"> <img id = "logoImage" src="images\header\logo_for_blue.png" alt = "logo"></a>
+	<a id = "logo" href = "./"> <img id = "logoImage" src="images\header\logo_for_blue.png" alt = "logo"></a>
     <div id = "switchContainer">
 
         <label class = "textOne" id = "nonselectedLang" >Spanish</label>
@@ -25,23 +32,24 @@
     
 	
 	<ul id = "nav_container">
-    	<li id = "headerList"><a href = "home.html" >Home</a></li>
-    	<li id = "headerList"> <a href= "about.html">About</a></li>
-        <li id = "headerList"><a href = "services.html" >Services</a></li>
-        <li id = "headerList"><a href = "therapyModels.html" >Therapy</a></li>
-    	<li id = "headerList"><a id = "onPage" href= "contactUs.html">Contact</a></li>
+    	<li id = "headerList"><a href = "./" >Home</a></li>
+    	<li id = "headerList"> <a href= "about">About</a></li>
+        <li id = "headerList"><a href = "services" >Services</a></li>
+        <li id = "headerList"><a href = "therapy" >Therapy</a></li>
+    	<li id = "headerList"><a id = "onPage" href= "contact-us">Contact</a></li>
 	</ul>
 </header>
 <div id = "aboutContainer">
     <div id = "picTitleContainer">
         <img id = "profilePic" src = "images\about\image_profile_pic_two.jpg" >
-        <div id = "titlOfPic">Maria Isela Ventura</div>
-        
+        <h1>
+            <div id = "titlOfPic">Maria Isela Ventura</div>
             <div id = "titlOfPic2">Licensed Professional Counselor<br>in the State of Texas<br>MS, LPC, NCC</div>
+        </h1>
             
     </div>
     <div id = "aboutInfo" >
-        <div id = "titleparaAbout" class = "textOne">About Me</div>
+        <h2 id = "titleparaAbout" class = "textOne">About Me</h2>
         <p id = "paraAbout">
                    	I graduated from the University of North Texas at Dallas with a Master of Science in
 			Clinical Mental Health Counseling. I have experience working with survivors of trauma,
@@ -52,18 +60,21 @@
 			approaches and evidence-based approaches (scientific research): Child-Centered Play
 			Therapy-CCPT and Expressive Arts Therapy, Sandtray Therapy, Cognitive-Behavioral
 			Therapy-CBT, Trauma-Focused Cognitive-Behavioral Therapy, The Gottman Method, and Eye Movement Desensitization Reprocessing-EMDR.
-                    <br>
-                    <br>Trained on:
-                    <br>Married and Loving it
-                    <br>Prepare and Enrich
-                    <br>Pairs for Successful Relationships
-        </p>
+        </p>   
+        <div id = "paragraph_training">
+            <h2 id = "trained_on"><b>Trained on:</b></h2>
+            Married and Loving it
+            <br>Prepare and Enrich
+            <br>Pairs for Successful Relationships
+        </div>
+        
+        
     </div>
 </div>
 <div id = "extraAboutContainer">
     <div id = "licenseContainer" class = "extraBlock">
         <img class = "topImage" src = "images\about\icon_license.png">
-        <div class = "textOne">License</div>
+        <h2 class = "textOne">License</h2>
         <ul id = "blockList">
             <li class = "textTwo">Licensed Professional Counselor-LPC in the State of Texas</li>
         </ul>
@@ -71,7 +82,7 @@
     
     <div id = "certificationContainer" class = "extraBlock">
         <img class = "topImage" src = "images\about\icon_certification.png">
-        <div class = "textOne">Certifications</div>
+        <h2 class = "textOne">Certifications</h2>
         <ul id = "blockList">
             <li class = "textTwo" id = "temp">
                 <a id ="nccLink" id = "nccContainer" href="https://www.youracclaim.com/badges/953a7aa9-48cb-4a0e-8eb0-c6b641d6725b/linked_in">
@@ -90,7 +101,7 @@
     </div>
     <div id = "membershipContainer" class = "extraBlock">
         <img class = "topImage" src = "images\about\icon_membership.png">
-    <div class = "textOne">Professional Memberships</div>
+    <h2 class = "textOne">Professional Memberships</h2>
         <ul id = "blockList">
 	    <li class = "textTwo">IOCDF-International OCD Foundation</li>
             <li class = "textTwo">NBCC-National Board for Certificated Counselors, Inc.</li>

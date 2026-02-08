@@ -91,7 +91,7 @@ function resetText()
 function switchLanguage() {
     "use strict";
     swch.checked = false;
-    window.location.href = "../therapyModels.html";
+    window.location.href = "../terapia";
 }
 
 

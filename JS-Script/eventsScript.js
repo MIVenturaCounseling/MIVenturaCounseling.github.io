@@ -3,5 +3,5 @@ var swch = document.getElementById("switchOne");
 function switchLanguage() {
     "use strict";
     swch.checked = false;
-    window.location.href = "en/events.html";
+    window.location.href = "en/events";
 }

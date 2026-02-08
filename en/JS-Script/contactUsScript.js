@@ -9,10 +9,15 @@ function switchLanguage() {
     "use strict";
     swch.checked = false;
     mobile_swch.checked = true;
-    window.location.href = "../contactUs.html";
+    window.location.href = "../contactanos";
 }
 
-
+function replace_image_one()
+{
+    "use strict";
+    document.getElementById("top_image").src = "images/contact/new_one.jpg";
+    document.getElementById("mobile_office_image").src = "images/contact/new_one.jpg";
+}
 
 
 var browser_width = window.innerWidth;
@@ -144,7 +149,7 @@ function checkScreen()
                             
                             document.getElementById("mobile_location_container").style.display = "block";
                             //addy mobile container
-                            document.getElementById("mobile_addy_info_container").style.width = "60%";
+                            document.getElementById("mobile_addy_info_container").style.width = "90%";
                             document.getElementById("mobile_addy_title_info").style.fontSize = "25px";
                             document.getElementById("mobile_addy_info").style.fontSize = "20px";
                             document.getElementById("mobile_gps_button").style.fontSize = "25px";
@@ -378,9 +383,3 @@ window.addEventListener('resize',
                         
                     });
 
-function replace_image_one()
-{
-    "use strict";
-    document.getElementById("top_image").src = "images/contact/new_one.jpg";
-    document.getElementById("mobile_office_image").src = "images/contact/new_one.jpg";
-}
