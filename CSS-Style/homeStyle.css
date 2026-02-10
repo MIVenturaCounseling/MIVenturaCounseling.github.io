@@ -311,161 +311,7 @@ input:checked + .slider:before {
     overflow: auto;
     
 }
-h1
-{
-    font-size: inherit;       
-    font-weight: inherit;   
-    margin: 0;            
-    padding: 0;            
-    color: inherit;        
-    display: inherit;       
-}
-h2
-{
-    font-size: inherit;       
-    font-weight: inherit;   
-    margin: 0;            
-    padding: 0;            
-    color: inherit;        
-    display: inherit;       
-}
-h3
-{
-    font-size: inherit;       
-    font-weight: inherit;   
-    margin: 0;            
-    padding: 0;            
-    color: inherit;        
-    display: inherit;       
-}
-#level_one_outer_container
-{
-    width:100%;
-    display: block;
-    background-image: url( "../images/home/level_one_image.jpg");
-    background-position:left top;
-    background-repeat:no-repeat;
-    background-size:auto 100%;
-    background-color: transparent;
-    aspect-ratio: 2.38/1;
-    position: relative;
-    margin-top: 160px;
 
-}
-#level_one_left_side_container
-{
-    height: 100%;
-    width: 42%;
-    
-}
-#level_one_title
-{
-    position: absolute;
-    font-size:5vw;
-    font-weight: 600;
-    font-stretch: 100%;
-    letter-spacing: 0px;
-    color: white;
-    padding: 0;
-    margin: 0;
-    top: 2rem;
-    left: 2%;
-    width:42%;
-    z-index: 1;
-    
-
-}
-#level_one_paragraph
-{
-    position: absolute;
-    font-size:2vw;
-    font-weight: 400;
-    font-stretch: 100%;
-    letter-spacing: 0px;
-    color: white;
-    top: 7rem;
-    left: 2%;
-    z-index: 1;
-    width:40%;
-}
-#black_shade
-{
-   width:28%;
-   height: 100%;
-   position:absolute;
-   top:0;
-   left:0; 
-   background-color: rgb(0, 0, 0,.6);
-}
-#today_seal
-{
-    
-    position: absolute;
-    right:2%;
-    top:2.5rem;
-    width:9vw;
-   
-    
-}
-#today_seal_image
-{
-    width:100%;
-    display: block;
-}
-#level_two_container
-{
-    width:100%;
-    display: block;
-    clear: both;
-    background-color: white;
-    overflow: auto;
-}
-#level_two_left_side_image
-{
-    width:50%;
-    height: 100%;;
-    display: block;
-    float:left;
-}
-#level_two_right_side_container
-{
-    width:50%;
-    height: 100%;
-    box-sizing: border-box;
-    display: block;
-    text-align: center;
-    background-color: white;
-    float: right;
-    padding: 2%;
-}
-#level_two_right_side_title
-{
-    
-    font-size:2vw;
-    font-weight: 600;
-    font-stretch: 100%;
-    letter-spacing: -2px;
-    color:#228B22;
-    margin-top:0rem;
-}
-#level_two_right_side_paragraph
-{
-    font-size:1.5vw;
-    font-weight: 500;
-    font-stretch: 100%;
-    letter-spacing: 0px;
-    color:black;
-    margin-top:.75rem;
-}
-#level_two_right_side_message
-{
-    font-size:1.5vw;
-    font-weight: 600;
-    font-stretch: 100%;
-    letter-spacing: 0px;
-    color:#228B22;
-    margin-top:0rem;
-}
 #imageMission
 {
     width:100%;
@@ -480,10 +326,16 @@ h3
     width:100%;
     text-align: center;
     position: relative;
-    display: none;
+}
+#todayseal
+{
+    
+    position: absolute;
+    right:20px;
+    top:40px;
+   
     
 }
-
 #helpContainer
 {
     background-color: cadetblue;
@@ -515,8 +367,6 @@ h3
     letter-spacing: 0px;
     visibility: hidden;
     text-align: center;
-    
-
     
 }
 #responseContainer
@@ -619,7 +469,7 @@ h3
 {
     width:50%;
     float:left;
-    
+  
     
 }
 #icontainer
@@ -637,7 +487,6 @@ h3
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    clear: both;
 }
 .fontSerious
 {
@@ -773,7 +622,7 @@ h3
 #imageIntrotwo
 {
     width:100%;
-    display: none;
+  
   
     
 }
@@ -856,86 +705,12 @@ h3
     margin-top: 20px;
    
 }
-
-@media only screen and (max-width:1200px)
+@media only screen and (max-device-width:900px)
 {
-    #level_one_outer_container
-    {
-        margin-top:140px;
-    }
-
-    #level_one_title
+    #link_to_events
     {
        
    
     }
-    #level_one_paragraph
-    {
-        
-       top: 5rem;
-        
-    }
    
 }
-
-@media only screen and (max-width:750px)
-{
-    #level_one_outer_container
-    {
-        
-    }
-
-    #level_one_title
-    {
-       
-   
-    }
-    #level_one_paragraph
-    {
-        
-       top: 4rem;
-        
-    }
-   
-}
-@media only screen and (max-width:750px)
-{
-    #level_one_outer_container
-    {
-        
-    }
-
-    #level_one_title
-    {
-       
-   
-    }
-    #level_one_paragraph
-    {
-        
-       top: 4rem;
-        
-    }
-   
-}
-@media only screen and (max-width:500px)
-{
-    #level_one_outer_container
-    {
-        
-    }
-
-    #level_one_title
-    {
-       
-   
-    }
-    #level_one_paragraph
-    {
-        font-size: 1.75vw;
-       top: 3.5rem;
-        
-    }
-   
-}
-
